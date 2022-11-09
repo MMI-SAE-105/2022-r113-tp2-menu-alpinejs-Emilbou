@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}, {TestIsOpen: false}" :class="{noscroll:menuIsOpen,">
+<html lang="fr" x-data="{menuIsOpen: false} " :class="{noscroll:menuIsOpen,">
 
 <head>
   <meta charset="UTF-8" />
@@ -47,8 +47,10 @@
   </header>
   <Accordeon>
 
-    <dl>
-      <dt aria-controls="testNav" @click="TestIsOpen=! TestIsOpen">Lorem.</dt>
+    <dl x-data="{TestIsOpen: false}">
+      <button>
+        <dt aria-controls="testNav" @click="TestIsOpen=! TestIsOpen">Lorem.</dt>
+      </button>
       <dd id="testNav" x-show="TestIsOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
