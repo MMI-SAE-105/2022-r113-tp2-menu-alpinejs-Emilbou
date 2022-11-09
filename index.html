@@ -61,9 +61,11 @@
       <dd x-show="deuxième">Consequatur laboriosam eveniet repellat obcaecati.</dd>
     </dl>
 
-    <dl>
-      <dt>Quo.</dt>
-      <dd>Fugiat consectetur ipsum sit eos.</dd>
+    <dl x-data="{troisième: false}">
+      <button>
+        <dt @click="troisième=! troisième">Quo.</dt>
+      </button>
+      <dd x-show="troisième">Fugiat consectetur ipsum sit eos.</dd>
     </dl>
   </Accordeon>
   <!-- h2>lorem2^p>lorem -->
