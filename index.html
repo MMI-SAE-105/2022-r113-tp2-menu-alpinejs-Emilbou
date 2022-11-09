@@ -53,10 +53,14 @@
       </button>
       <dd id="testNav" x-show="TestIsOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
-    <dl>
-      <dt>Deleniti.</dt>
-      <dd>Consequatur laboriosam eveniet repellat obcaecati.</dd>
+
+    <dl x-data="{jesaispaIsOpen: false}">
+      <button>
+        <dt aria-controls="jesaispaNav" @click="jesaispaIsOpen=! jesaispaIsOpen">Deleniti.</dt>
+      </button>
+      <dd id="testNav" x-show="TestIsOpen">Consequatur laboriosam eveniet repellat obcaecati.</dd>
     </dl>
+
     <dl>
       <dt>Quo.</dt>
       <dd>Fugiat consectetur ipsum sit eos.</dd>
