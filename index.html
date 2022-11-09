@@ -46,10 +46,19 @@
     </nav>
   </header>
   <Accordeon>
-    <button aria-controls="mainNav" @click="menuIsOpen=! menuIsOpen" class="header__menuBtn">menu>
 
-    </button>
-
+    <dl>
+      <dt aria-controls="testNav" @click="Test=! Test">Lorem.</dt>
+      <dd id="testNav" x-show="Test">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl>
+      <dt>Deleniti.</dt>
+      <dd>Consequatur laboriosam eveniet repellat obcaecati.</dd>
+    </dl>
+    <dl>
+      <dt>Quo.</dt>
+      <dd>Fugiat consectetur ipsum sit eos.</dd>
+    </dl>
   </Accordeon>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
