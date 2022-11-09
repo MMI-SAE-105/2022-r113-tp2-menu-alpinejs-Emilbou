@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,">
+<html lang="fr" x-data="{menuIsOpen: false}, {TestIsOpen: false}" :class="{noscroll:menuIsOpen,">
 
 <head>
   <meta charset="UTF-8" />
@@ -48,8 +48,8 @@
   <Accordeon>
 
     <dl>
-      <dt aria-controls="testNav" @click="Test=! Test">Lorem.</dt>
-      <dd id="testNav" x-show="Test">Lorem ipsum dolor sit amet.</dd>
+      <dt aria-controls="testNav" @click="TestIsOpen=! TestIsOpen">Lorem.</dt>
+      <dd id="testNav" x-show="TestIsOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
       <dt>Deleniti.</dt>
