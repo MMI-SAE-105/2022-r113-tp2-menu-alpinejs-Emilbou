@@ -46,21 +46,18 @@
     </nav>
   </header>
   <Accordeon>
-
     <dl x-data="{TestIsOpen: false}">
       <button>
         <dt aria-controls="testNav" @click="TestIsOpen=! TestIsOpen">Lorem.</dt>
       </button>
       <dd id="testNav" x-show="TestIsOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
-
     <dl x-data="{deuxième: false}">
       <button>
         <dt @click="deuxième=! deuxième">Deleniti.</dt>
       </button>
       <dd x-show="deuxième">Consequatur laboriosam eveniet repellat obcaecati.</dd>
     </dl>
-
     <dl x-data="{troisième: false}">
       <button>
         <dt @click="troisième=! troisième">Quo.</dt>
